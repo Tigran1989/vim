@@ -1,0 +1,43 @@
+set number
+set expandtab
+set tabstop=2
+
+set hlsearch
+set incsearch
+
+syntax on
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+
+"colorscheme
+Plug 'morhetz/gruvbox'
+
+colorscheme gruvbox
+set background=dark
+
+call plug#end()
+
+
+
+"mappings
+
+map <C-n> :NERDTreeToggle<CR>
+
+
+:source ~/.vimrc
+
+:PluginInstall
+
+this 2 plugin for me best
+
+https://github.com/morhetz/gruvbox
+https://github.com/junegunn/vim-plug
+
